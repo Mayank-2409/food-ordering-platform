@@ -1,3 +1,5 @@
+import RestaurantCard from "./RestaurantCard"
+
 export default function RestaurantsPage() {
   return (
     <section className="p-8">
@@ -5,9 +7,15 @@ export default function RestaurantsPage() {
         Restaurants
       </h1>
 
-      <p className="mt-2 text-gray-600">
-        List of available restaurants will appear here.
-      </p>
+      <div className="grid grid-cols-4 gap-4">
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+      </div>
     </section>
   );
 }
