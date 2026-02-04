@@ -34,3 +34,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+# Food Ordering Platform
+
+A scalable food ordering platform built as a **learning-first project**.
+
+This project focuses on:
+- Clean architecture
+- Scalable frontend and backend design
+- Real-world engineering practices
+- Gradual evolution (not premature optimization)
+
+---
+
+## Goals
+- Build a production-style web application
+- Learn frontend architecture with Next.js
+- Design backend-ready domains
+- Practice good Git and documentation habits
+
+---
+
+## Tech Stack (Current)
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+
+Backend and infrastructure will be added incrementally.
+
+---
+
+## Project Status
+🚧 Active development  
+Currently working on frontend architecture and core UI.
