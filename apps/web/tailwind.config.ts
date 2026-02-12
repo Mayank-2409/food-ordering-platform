@@ -13,4 +13,4 @@ const config: Config = {
   plugins: [],
 };
 
-export default config;git commit -m "feat: style global footer"
+export default config;
