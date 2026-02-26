@@ -2,8 +2,12 @@
 
 import { useState } from "react";
 import { loginUser } from "@/services/auth.service";
+import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
+
+  const router = useRouter();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -16,8 +20,10 @@ export default function LoginForm() {
 
     try {
       const user = await loginUser({ email, password });
+      localStorage.setItem("user", JSON.stringify({ email })); // For soft route protection
       console.log("Logged in user:", user);
       alert("Login successful");
+      router.replace("/restaurants");
     } catch (err) {
       setError("Invalid email or password");
     } finally {

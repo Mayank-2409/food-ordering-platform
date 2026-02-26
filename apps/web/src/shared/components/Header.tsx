@@ -15,6 +15,16 @@ export default function Header() {
       >
         Restaurants
       </Link>
+      <Link href="/login" className="hover:text-blue-600">
+          Login
+        </Link>
+
+        <Link
+          href="/signup"
+          className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+        >
+          Sign Up
+        </Link>
     </nav>
   </div>
 </header>

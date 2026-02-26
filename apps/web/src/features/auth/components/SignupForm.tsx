@@ -1,9 +1,12 @@
 "use client";
 
 import { signupUser } from "@/services";
+import { useRouter } from "next/navigation";
 import { useState } from "react"
 
 export default function SignupForm() {
+
+  const router = useRouter();
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -19,6 +22,7 @@ export default function SignupForm() {
       const user = await signupUser({ email, password });
       console.log("Signed up user:", user);
       alert("Signup successful");
+      router.replace("/restaurants");
     } catch (err) {
       setError("Signup failed");
     } finally {
